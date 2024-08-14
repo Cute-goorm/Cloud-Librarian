@@ -9,8 +9,8 @@
     --whiteColor: #ffffff;
     --lightGray: #e0e0e0;
     --darkGray: #757575;
-    --errorRed: #e63f3f;
-    --errorRedHover: #ff1744;
+    --errorRed: #f35071;
+    --errorRedHover: #ad1735;
     --successGreen: #4caf50;
     --successGreenHover: #388e3c;
     --infoBlue: #2196f3;
@@ -100,6 +100,8 @@ button {
   -webkit-appearance: none; /* 웹킷 브라우저에서 기본 버튼 스타일 제거 */
   -moz-appearance: none; /* 모질라 브라우저에서 기본 버튼 스타일 제거 */
   appearance: none; /* 기본 버튼 스타일 제거 */
+  background-color: var(--whiteColor);
+  border: none;
 }
 
 /* 폼 요소 기본 스타일 제거 및 상속 */
