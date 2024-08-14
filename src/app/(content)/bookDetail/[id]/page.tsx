@@ -1,5 +1,5 @@
 export default function BookDetailPage() {
     return <>
-        <h1>BookDetail ID Page</h1>
+        <h1>BookDetail Page</h1>
     </>
 }
