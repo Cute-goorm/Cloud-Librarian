@@ -1,0 +1,618 @@
+{
+  "books": [
+    {
+      "id": "1",
+      "title": "Learning JavaScript",
+      "author": "John Doe",
+      "publisher": "Tech Books Publishing",
+      "publicationYear": 2021,
+      "previewContent": "This is a comprehensive guide to JavaScript.",
+      "imageUrl": "https://via.placeholder.com/150/0000FF/FFFFFF/?text=Book+1"
+    },
+    {
+      "id": "2",
+      "title": "Advanced CSS",
+      "author": "Jane Smith",
+      "publisher": "Design Books Publishing",
+      "publicationYear": 2020,
+      "previewContent": "Deep dive into CSS for modern web design.",
+      "imageUrl": "https://via.placeholder.com/150/FF0000/FFFFFF/?text=Book+2"
+    },
+    {
+      "id": "3",
+      "title": "React in Action",
+      "author": "Emily Davis",
+      "publisher": "Tech Books Publishing",
+      "publicationYear": 2019,
+      "previewContent": "A practical guide to building web applications using React.",
+      "imageUrl": "https://via.placeholder.com/150/00FF00/FFFFFF/?text=Book+3"
+    },
+    {
+      "id": "4",
+      "title": "Node.js Design Patterns",
+      "author": "Michael Brown",
+      "publisher": "Tech Books Publishing",
+      "publicationYear": 2018,
+      "previewContent": "Learn design patterns and best practices in Node.js.",
+      "imageUrl": "https://via.placeholder.com/150/FFFF00/FFFFFF/?text=Book+4"
+    },
+    {
+      "id": "5",
+      "title": "Fullstack Vue.js",
+      "author": "Laura Wilson",
+      "publisher": "Web Dev Publishing",
+      "publicationYear": 2021,
+      "previewContent": "A complete guide to building fullstack applications with Vue.js.",
+      "imageUrl": "https://via.placeholder.com/150/FF00FF/FFFFFF/?text=Book+5"
+    },
+    {
+      "id": "6",
+      "title": "Python for Data Science",
+      "author": "Steven Thompson",
+      "publisher": "Data Books Publishing",
+      "publicationYear": 2020,
+      "previewContent": "A guide to using Python for data analysis and visualization.",
+      "imageUrl": "https://via.placeholder.com/150/00FFFF/FFFFFF/?text=Book+6"
+    },
+    {
+      "id": "7",
+      "title": "Django for Beginners",
+      "author": "Robert White",
+      "publisher": "Web Dev Publishing",
+      "publicationYear": 2019,
+      "previewContent": "Learn Django from scratch with this beginner's guide.",
+      "imageUrl": "https://via.placeholder.com/150/FFA500/FFFFFF/?text=Book+7"
+    },
+    {
+      "id": "8",
+      "title": "Effective TypeScript",
+      "author": "Paul Johnson",
+      "publisher": "Tech Books Publishing",
+      "publicationYear": 2022,
+      "previewContent": "Best practices and tips for writing TypeScript.",
+      "imageUrl": "https://via.placeholder.com/150/800080/FFFFFF/?text=Book+8"
+    },
+    {
+      "id": "9",
+      "title": "Learning GraphQL",
+      "author": "Martha Green",
+      "publisher": "Tech Books Publishing",
+      "publicationYear": 2020,
+      "previewContent": "Introduction to GraphQL for modern web APIs.",
+      "imageUrl": "https://via.placeholder.com/150/008080/FFFFFF/?text=Book+9"
+    },
+    {
+      "id": "10",
+      "title": "Mastering Docker",
+      "author": "Henry Adams",
+      "publisher": "DevOps Books Publishing",
+      "publicationYear": 2018,
+      "previewContent": "A comprehensive guide to containerization with Docker.",
+      "imageUrl": "https://via.placeholder.com/150/FFC0CB/FFFFFF/?text=Book+10"
+    },
+    {
+      "id": "11",
+      "title": "React Native in Action",
+      "author": "John Doe",
+      "publisher": "Tech Books Publishing",
+      "publicationYear": 2021,
+      "previewContent": "Learn how to build native mobile apps with React Native.",
+      "imageUrl": "https://via.placeholder.com/150/0000FF/FFFFFF/?text=Book+11"
+    },
+    {
+      "id": "12",
+      "title": "Pro Angular",
+      "author": "Jane Smith",
+      "publisher": "Design Books Publishing",
+      "publicationYear": 2020,
+      "previewContent": "Advanced concepts and techniques for Angular development.",
+      "imageUrl": "https://via.placeholder.com/150/FF0000/FFFFFF/?text=Book+12"
+    },
+    {
+      "id": "13",
+      "title": "Node.js Web Development",
+      "author": "Emily Davis",
+      "publisher": "Tech Books Publishing",
+      "publicationYear": 2019,
+      "previewContent": "Build scalable web applications using Node.js.",
+      "imageUrl": "https://via.placeholder.com/150/00FF00/FFFFFF/?text=Book+13"
+    },
+    {
+      "id": "14",
+      "title": "Modern JavaScript",
+      "author": "Michael Brown",
+      "publisher": "Tech Books Publishing",
+      "publicationYear": 2018,
+      "previewContent": "Learn modern JavaScript features and best practices.",
+      "imageUrl": "https://via.placeholder.com/150/FFFF00/FFFFFF/?text=Book+14"
+    },
+    {
+      "id": "15",
+      "title": "Vue.js Up and Running",
+      "author": "Laura Wilson",
+      "publisher": "Web Dev Publishing",
+      "publicationYear": 2021,
+      "previewContent": "Get started with Vue.js for modern web development.",
+      "imageUrl": "https://via.placeholder.com/150/FF00FF/FFFFFF/?text=Book+15"
+    },
+    {
+      "id": "16",
+      "title": "Python Machine Learning",
+      "author": "Steven Thompson",
+      "publisher": "Data Books Publishing",
+      "publicationYear": 2020,
+      "previewContent": "Introduction to machine learning with Python.",
+      "imageUrl": "https://via.placeholder.com/150/00FFFF/FFFFFF/?text=Book+16"
+    },
+    {
+      "id": "17",
+      "title": "Flask Web Development",
+      "author": "Robert White",
+      "publisher": "Web Dev Publishing",
+      "publicationYear": 2019,
+      "previewContent": "Learn Flask for building lightweight web applications.",
+      "imageUrl": "https://via.placeholder.com/150/FFA500/FFFFFF/?text=Book+17"
+    },
+    {
+      "id": "18",
+      "title": "TypeScript Deep Dive",
+      "author": "Paul Johnson",
+      "publisher": "Tech Books Publishing",
+      "publicationYear": 2022,
+      "previewContent": "Advanced techniques and tips for TypeScript development.",
+      "imageUrl": "https://via.placeholder.com/150/800080/FFFFFF/?text=Book+18"
+    },
+    {
+      "id": "19",
+      "title": "GraphQL in Practice",
+      "author": "Martha Green",
+      "publisher": "Tech Books Publishing",
+      "publicationYear": 2020,
+      "previewContent": "Practical guide to building GraphQL APIs.",
+      "imageUrl": "https://via.placeholder.com/150/008080/FFFFFF/?text=Book+19"
+    },
+    {
+      "id": "20",
+      "title": "Kubernetes in Action",
+      "author": "Henry Adams",
+      "publisher": "DevOps Books Publishing",
+      "publicationYear": 2018,
+      "previewContent": "Learn Kubernetes for container orchestration.",
+      "imageUrl": "https://via.placeholder.com/150/FFC0CB/FFFFFF/?text=Book+20"
+    }
+  ],
+  "reviews": [
+    {
+      "id": "101",
+      "bookId": "1",
+      "userId": "201",
+      "content": "A very insightful book on JavaScript.",
+      "rating": 5
+    },
+    {
+      "id": "102",
+      "bookId": "2",
+      "userId": "202",
+      "content": "Helped me improve my CSS skills.",
+      "rating": 4
+    },
+    {
+      "id": "103",
+      "bookId": "3",
+      "userId": "203",
+      "content": "Great introduction to React.",
+      "rating": 5
+    },
+    {
+      "id": "104",
+      "bookId": "4",
+      "userId": "204",
+      "content": "Good book on design patterns in Node.js.",
+      "rating": 4
+    },
+    {
+      "id": "105",
+      "bookId": "5",
+      "userId": "205",
+      "content": "Very useful for learning Vue.js.",
+      "rating": 5
+    },
+    {
+      "id": "106",
+      "bookId": "6",
+      "userId": "206",
+      "content": "Good introduction to data science with Python.",
+      "rating": 4
+    },
+    {
+      "id": "107",
+      "bookId": "7",
+      "userId": "207",
+      "content": "Perfect for beginners in Django.",
+      "rating": 5
+    },
+    {
+      "id": "108",
+      "bookId": "8",
+      "userId": "208",
+      "content": "Helped me improve my TypeScript skills.",
+      "rating": 4
+    },
+    {
+      "id": "109",
+      "bookId": "9",
+      "userId": "209",
+      "content": "Great guide to GraphQL.",
+      "rating": 5
+    },
+    {
+      "id": "110",
+      "bookId": "10",
+      "userId": "210",
+      "content": "In-depth guide to Docker.",
+      "rating": 5
+    },
+    {
+      "id": "111",
+      "bookId": "11",
+      "userId": "201",
+      "content": "Useful for learning React Native.",
+      "rating": 4
+    },
+    {
+      "id": "112",
+      "bookId": "12",
+      "userId": "202",
+      "content": "Advanced Angular concepts explained well.",
+      "rating": 5
+    },
+    {
+      "id": "113",
+      "bookId": "13",
+      "userId": "203",
+      "content": "Good book for Node.js web development.",
+      "rating": 4
+    },
+    {
+      "id": "114",
+      "bookId": "14",
+      "userId": "204",
+      "content": "Excellent coverage of modern JavaScript.",
+      "rating": 5
+    },
+    {
+      "id": "115",
+      "bookId": "15",
+      "userId": "205",
+      "content": "Great starting point for Vue.js.",
+      "rating": 5
+    },
+    {
+      "id": "116",
+      "bookId": "16",
+      "userId": "206",
+      "content": "Good introduction to machine learning with Python.",
+      "rating": 4
+    },
+    {
+      "id": "117",
+      "bookId": "17",
+      "userId": "207",
+      "content": "Perfect for beginners in Flask.",
+      "rating": 5
+    },
+    {
+      "id": "118",
+      "bookId": "18",
+      "userId": "208",
+      "content": "Helped me dive deep into TypeScript.",
+      "rating": 5
+    },
+    {
+      "id": "119",
+      "bookId": "19",
+      "userId": "209",
+      "content": "Practical advice on building GraphQL APIs.",
+      "rating": 4
+    },
+    {
+      "id": "120",
+      "bookId": "20",
+      "userId": "210",
+      "content": "Very useful for learning Kubernetes.",
+      "rating": 5
+    },
+    {
+      "id": "121",
+      "bookId": "1",
+      "userId": "201",
+      "content": "Really detailed and helpful.",
+      "rating": 4
+    },
+    {
+      "id": "122",
+      "bookId": "2",
+      "userId": "202",
+      "content": "Loved the depth of content.",
+      "rating": 5
+    },
+    {
+      "id": "123",
+      "bookId": "3",
+      "userId": "203",
+      "content": "A must-read for React developers.",
+      "rating": 5
+    },
+    {
+      "id": "124",
+      "bookId": "4",
+      "userId": "204",
+      "content": "Covers all the necessary design patterns.",
+      "rating": 4
+    },
+    {
+      "id": "125",
+      "bookId": "5",
+      "userId": "205",
+      "content": "Really well written for Vue.js.",
+      "rating": 5
+    },
+    {
+      "id": "126",
+      "bookId": "6",
+      "userId": "206",
+      "content": "An excellent Python resource.",
+      "rating": 5
+    },
+    {
+      "id": "127",
+      "bookId": "7",
+      "userId": "207",
+      "content": "Django basics explained very well.",
+      "rating": 4
+    },
+    {
+      "id": "128",
+      "bookId": "8",
+      "userId": "208",
+      "content": "Advanced TypeScript techniques.",
+      "rating": 5
+    },
+    {
+      "id": "129",
+      "bookId": "9",
+      "userId": "209",
+      "content": "GraphQL concepts made easy.",
+      "rating": 4
+    },
+    {
+      "id": "130",
+      "bookId": "10",
+      "userId": "210",
+      "content": "Docker basics and beyond.",
+      "rating": 5
+    },
+    {
+      "id": "131",
+      "bookId": "11",
+      "userId": "201",
+      "content": "React Native demystified.",
+      "rating": 5
+    },
+    {
+      "id": "132",
+      "bookId": "12",
+      "userId": "202",
+      "content": "Great resource for Angular developers.",
+      "rating": 4
+    },
+    {
+      "id": "133",
+      "bookId": "13",
+      "userId": "203",
+      "content": "Node.js concepts explained clearly.",
+      "rating": 5
+    },
+    {
+      "id": "134",
+      "bookId": "14",
+      "userId": "204",
+      "content": "A comprehensive guide to JavaScript.",
+      "rating": 5
+    },
+    {
+      "id": "135",
+      "bookId": "15",
+      "userId": "205",
+      "content": "Vue.js up and running in no time.",
+      "rating": 4
+    },
+    {
+      "id": "136",
+      "bookId": "16",
+      "userId": "206",
+      "content": "Machine learning made easy with Python.",
+      "rating": 5
+    },
+    {
+      "id": "137",
+      "bookId": "17",
+      "userId": "207",
+      "content": "Flask concepts explained clearly.",
+      "rating": 4
+    },
+    {
+      "id": "138",
+      "bookId": "18",
+      "userId": "208",
+      "content": "In-depth TypeScript guide.",
+      "rating": 5
+    },
+    {
+      "id": "139",
+      "bookId": "19",
+      "userId": "209",
+      "content": "GraphQL APIs made easy.",
+      "rating": 5
+    },
+    {
+      "id": "140",
+      "bookId": "20",
+      "userId": "210",
+      "content": "Kubernetes basics covered well.",
+      "rating": 4
+    },
+    {
+      "id": "141",
+      "bookId": "1",
+      "userId": "201",
+      "content": "Very detailed JavaScript guide.",
+      "rating": 5
+    },
+    {
+      "id": "142",
+      "bookId": "2",
+      "userId": "202",
+      "content": "Helped me master CSS.",
+      "rating": 4
+    },
+    {
+      "id": "143",
+      "bookId": "3",
+      "userId": "203",
+      "content": "React concepts covered very well.",
+      "rating": 5
+    },
+    {
+      "id": "144",
+      "bookId": "4",
+      "userId": "204",
+      "content": "Good for understanding Node.js design patterns.",
+      "rating": 5
+    },
+    {
+      "id": "145",
+      "bookId": "5",
+      "userId": "205",
+      "content": "Excellent for learning Vue.js.",
+      "rating": 5
+    },
+    {
+      "id": "146",
+      "bookId": "6",
+      "userId": "206",
+      "content": "Good for beginners in data science.",
+      "rating": 4
+    },
+    {
+      "id": "147",
+      "bookId": "7",
+      "userId": "207",
+      "content": "Django basics explained clearly.",
+      "rating": 5
+    },
+    {
+      "id": "148",
+      "bookId": "8",
+      "userId": "208",
+      "content": "Great for advanced TypeScript developers.",
+      "rating": 4
+    },
+    {
+      "id": "149",
+      "bookId": "9",
+      "userId": "209",
+      "content": "GraphQL for beginners.",
+      "rating": 5
+    },
+    {
+      "id": "150",
+      "bookId": "10",
+      "userId": "210",
+      "content": "A must-read for Docker users.",
+      "rating": 5
+    }
+  ],
+  "users": [
+    {
+      "id": "201",
+      "name": "Alice Johnson",
+      "email": "alice@example.com",
+      "password": "password123",
+      "profileImage": "https://via.placeholder.com/100/0000FF/FFFFFF/?text=User+1",
+      "isAdmin": true
+    },
+    {
+      "id": "202",
+      "name": "Bob Smith",
+      "email": "bob@example.com",
+      "password": "password123",
+      "profileImage": "https://via.placeholder.com/100/FF0000/FFFFFF/?text=User+2",
+      "isAdmin": true
+    },
+    {
+      "id": "203",
+      "name": "Charlie Brown",
+      "email": "charlie@example.com",
+      "password": "password123",
+      "profileImage": "https://via.placeholder.com/100/00FF00/FFFFFF/?text=User+3",
+      "isAdmin": false
+    },
+    {
+      "id": "204",
+      "name": "David Wilson",
+      "email": "david@example.com",
+      "password": "password123",
+      "profileImage": "https://via.placeholder.com/100/FFFF00/FFFFFF/?text=User+4",
+      "isAdmin": false
+    },
+    {
+      "id": "205",
+      "name": "Eve Davis",
+      "email": "eve@example.com",
+      "password": "password123",
+      "profileImage": "https://via.placeholder.com/100/FF00FF/FFFFFF/?text=User+5",
+      "isAdmin": false
+    },
+    {
+      "id": "206",
+      "name": "Frank Thompson",
+      "email": "frank@example.com",
+      "password": "password123",
+      "profileImage": "https://via.placeholder.com/100/00FFFF/FFFFFF/?text=User+6",
+      "isAdmin": false
+    },
+    {
+      "id": "207",
+      "name": "Grace Lee",
+      "email": "grace@example.com",
+      "password": "password123",
+      "profileImage": "https://via.placeholder.com/100/FFA500/FFFFFF/?text=User+7",
+      "isAdmin": false
+    },
+    {
+      "id": "208",
+      "name": "Henry White",
+      "email": "henry@example.com",
+      "password": "password123",
+      "profileImage": "https://via.placeholder.com/100/800080/FFFFFF/?text=User+8",
+      "isAdmin": false
+    },
+    {
+      "id": "209",
+      "name": "Ivy Green",
+      "email": "ivy@example.com",
+      "password": "password123",
+      "profileImage": "https://via.placeholder.com/100/008080/FFFFFF/?text=User+9",
+      "isAdmin": false
+    },
+    {
+      "id": "210",
+      "name": "Jack Black",
+      "email": "jack@example.com",
+      "password": "password123",
+      "profileImage": "https://via.placeholder.com/100/FFC0CB/FFFFFF/?text=User+10",
+      "isAdmin": false
+    }
+  ]
+}
