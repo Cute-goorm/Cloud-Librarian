@@ -1,5 +1,7 @@
+import SignupInfo from "./_component/SignupInfo";
+
 export default function SignupPage() {
-  return <>
-    <h1>Signup Page</h1>
-  </>;
+  return <main>
+    <SignupInfo />
+  </main>;
 }

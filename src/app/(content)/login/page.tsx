@@ -1,5 +1,7 @@
+import LoginInfo from "./_component/LoginInfo";
+
 export default function LoginPage() {
-  return <>
-    <h1>Login Page</h1>
-  </>
+  return <main>
+    <LoginInfo />
+  </main>
 }
