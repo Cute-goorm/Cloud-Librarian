@@ -7,6 +7,11 @@ export default function ButtonTest() {
     return (
         <>
             <div>
+                <Link href='/'>
+                    <SuccessButton>
+                        Main
+                    </SuccessButton>
+                </Link>
                 <Link href='/120asdk213'>
                     <BasicButton>
                         bookDetail
