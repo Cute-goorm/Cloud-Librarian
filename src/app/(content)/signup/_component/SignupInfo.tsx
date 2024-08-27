@@ -2,20 +2,41 @@
 import { useRouter } from "next/navigation";
 import { AuthInput, AuthLayout, BgLine, SocialSignupButton } from "../../_component/Auth/Auth.styled";
 import { useState } from "react";
-import { BasicButton } from "@/app/_component/ButtonTest";
 import SocialBtn from "../../_component/Auth/SocialBtn/SocialBtn";
 import Link from "next/link";
+import { SignupBtn, ValMsg } from "./signup.style";
 
 export default function SignupInfo() {
     const [email, setEmail] = useState<string>('')
     const [password, setPassword] = useState<string>('')
+    const [confirmPassword, setConfirmPassword] = useState<string>('')
     const [nickName, setNickName] = useState<string>('')
+
+
+    // 이메일 형식 검사
+    const validateEmail = (email: string): boolean => {
+        const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/i;
+        return emailRegex.test(email)
+    }
+    // 비밀번호 형식 검사
+    const validatePassword = (password: string): boolean => {
+        const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
+        return passwordRegex.test(password)
+    }
+    // 비밀번호 일치 검사
+    const isPasswordMatched = (password: string, confirmPassword: string): boolean => {
+        return password === confirmPassword
+    }
+
 
     const handleChangeEmail = (e: React.ChangeEvent<HTMLInputElement>) => {
         setEmail(e.target.value)
     }
     const handleChangePassword = (e: React.ChangeEvent<HTMLInputElement>) => {
         setPassword(e.target.value)
+    }
+    const handleChangeConfirmPassword = (e: React.ChangeEvent<HTMLInputElement>) => {
+        setConfirmPassword(e.target.value)
     }
     const handleChangeNickName = (e: React.ChangeEvent<HTMLInputElement>) => {
         setNickName(e.target.value)
@@ -26,9 +47,15 @@ export default function SignupInfo() {
         router.replace('/');
     }
 
+
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault()
-        console.log({ email, password, nickName });
+        // 모든 검사를 통과 했는지 확인
+        if (validateEmail(email) && validatePassword(password) && isPasswordMatched(password, confirmPassword)) {
+            console.log({ email, password, nickName });
+        } else {
+            alert('아이디 및 비밀번호를 확인해 주세요.')
+        }
     }
 
     return (
@@ -55,21 +82,43 @@ export default function SignupInfo() {
                     value={email}
                     onChange={handleChangeEmail}
                 />
+
+                {
+                    email && !validateEmail(email) &&
+                    <ValMsg>'*이메일 형식이 올바르지 않습니다.' </ValMsg>
+                }
                 <AuthInput
                     type="password"
                     placeholder="비밀번호"
                     value={password}
                     onChange={handleChangePassword}
                 />
+                {
+                    password && !validatePassword(password) &&
+                    <ValMsg>
+                        *8자 이상 영문과 숫자를 포함 시켜주세요.
+                    </ValMsg>
+
+                }
+                <AuthInput
+                    type="password"
+                    placeholder="비밀번호 확인"
+                    value={confirmPassword}
+                    onChange={handleChangeConfirmPassword}
+                />
+                {
+                    confirmPassword && !isPasswordMatched(password, confirmPassword) &&
+                    <ValMsg>*비밀번호가 일치하지 않습니다.</ValMsg>
+                }
                 <AuthInput
                     type="text"
                     placeholder="닉네임"
                     value={nickName}
                     onChange={handleChangeNickName}
                 />
-                <BasicButton style={{ borderRadius: '8px', height: '34px', width: '100%' }}>
+                <SignupBtn>
                     회원가입
-                </BasicButton>
+                </SignupBtn>
             </form>
             <BgLine />
             <div style={{ width: '100%' }}>
