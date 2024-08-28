@@ -58,7 +58,7 @@ export const apiEndPoint = {
         likeReview: (review_id: any) => `${BASE_URL}/api/reviews/${review_id}/like`,
 
         // 리뷰 싫어요 POST
-        dislikeReview: (review_id: any) => `${BASE_URL}/api/reviews/${review_id}/dislike`,
+        dislikeReview: (review_id: any) => `${BASE_URL}/api,/reviews/${review_id}/dislike`,
     }
 
 }
