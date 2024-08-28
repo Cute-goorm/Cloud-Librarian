@@ -1,17 +1,22 @@
 'use client'
 import { useRouter } from "next/navigation";
-import { AuthInput, AuthLayout, BgLine, SocialSignupButton } from "../../_component/Auth/Auth.styled";
+import { AuthInput, AuthLayout, BgLine, SignupBtn, SocialSignupButton, ValMsg } from "../../_component/Auth/Auth.styled";
 import { useState } from "react";
 import SocialBtn from "../../_component/Auth/SocialBtn/SocialBtn";
 import Link from "next/link";
-import { SignupBtn, ValMsg } from "./signup.style";
+import AuthErrorModal from "../../_component/Auth/AuthErrorModal";
 
 export default function SignupInfo() {
     const [email, setEmail] = useState<string>('')
     const [password, setPassword] = useState<string>('')
     const [confirmPassword, setConfirmPassword] = useState<string>('')
     const [nickName, setNickName] = useState<string>('')
+    const [isOpen, setIsOpen] = useState<boolean>(false)
+    const [message, setMessage] = useState<string>('')
 
+    const handleCloseModal = () => {
+        setIsOpen(false);
+    }
 
     // 이메일 형식 검사
     const validateEmail = (email: string): boolean => {
@@ -20,7 +25,7 @@ export default function SignupInfo() {
     }
     // 비밀번호 형식 검사
     const validatePassword = (password: string): boolean => {
-        const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
+        const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/;
         return passwordRegex.test(password)
     }
     // 비밀번호 일치 검사
@@ -54,7 +59,14 @@ export default function SignupInfo() {
         if (validateEmail(email) && validatePassword(password) && isPasswordMatched(password, confirmPassword)) {
             console.log({ email, password, nickName });
         } else {
-            alert('아이디 및 비밀번호를 확인해 주세요.')
+            if (!validateEmail(email)) {
+                setMessage('이메일를 확인해 주세요.')
+                setIsOpen(true);
+
+            } else if (!validatePassword(password)) {
+                setMessage('비밀번호를 확인해 주세요.')
+                setIsOpen(true);
+            }
         }
     }
 
@@ -85,7 +97,7 @@ export default function SignupInfo() {
 
                 {
                     email && !validateEmail(email) &&
-                    <ValMsg>'*이메일 형식이 올바르지 않습니다.' </ValMsg>
+                    <ValMsg>*이메일 형식이 올바르지 않습니다. </ValMsg>
                 }
                 <AuthInput
                     type="password"
@@ -96,7 +108,7 @@ export default function SignupInfo() {
                 {
                     password && !validatePassword(password) &&
                     <ValMsg>
-                        *8자 이상 영문과 숫자를 포함 시켜주세요.
+                        *8자 이상 영문과 숫자, 특수문자를 포함 시켜주세요.
                     </ValMsg>
 
                 }
@@ -126,6 +138,8 @@ export default function SignupInfo() {
             </div>
             <BgLine />
             <Link href='/login' style={{ textAlign: 'center', width: '100%', fontSize: '14px' }}>기존 회원 로그인하러 가기</Link>
+
+            <AuthErrorModal isOpen={isOpen} onClose={handleCloseModal} message={message} />
         </AuthLayout>
     )
 }

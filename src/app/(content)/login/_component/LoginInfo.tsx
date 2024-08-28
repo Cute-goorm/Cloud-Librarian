@@ -1,18 +1,18 @@
 'use client'
 
 import { BasicButton } from "@/app/_component/ButtonTest";
-import { AuthInput, AuthLayout, BgLine } from "../../_component/Auth/Auth.styled";
+import { AuthInput, AuthLayout, BgLine, LoginBtn } from "../../_component/Auth/Auth.styled";
 import React, { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import SocialBtn from "../../_component/Auth/SocialBtn/SocialBtn";
-import { LoginBtn } from "./login.style";
-import LoginErrorModal from "./LoginErrorModal";
+import AuthErrorModal from "../../_component/Auth/AuthErrorModal";
 
 export default function LoginInfo() {
     const [email, setEmail] = useState<string>('')
     const [password, setPassword] = useState<string>('')
     const [isOpen, setIsOpen] = useState<boolean>(false)
+    const [message, setMessage] = useState<string>('')
 
     const router = useRouter();
 
@@ -31,21 +31,19 @@ export default function LoginInfo() {
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault()
         console.log({ email, password });
-        // 가상으로 DB 확인
-        const isLoginSuccess = mockLogin(email, password)
-        if (!isLoginSuccess) {
-            // 에러 상황에서 모달창 띄우기
+
+        // 에러 상황에서 모달창 띄우기
+        if (!email) {
+            setMessage('이메일을 확인해 주세요')
+            setIsOpen(true)
+        } else if (!password) {
+            setMessage('비밀번호를 확인해 주세요.')
             setIsOpen(true)
         } else {
             // 로그인 성공시 로직
+            router.back();
         }
     }
-    // 가상 로그인 함수
-    const mockLogin = (email: string, password: string): boolean => {
-        // 간단한 조건으로 시뮬레이션
-        return email === 'example@example.com' && password === 'example123';
-    }
-
 
 
     const onClickBackBtn = () => {
@@ -99,12 +97,8 @@ export default function LoginInfo() {
                     회원가입
                 </BasicButton>
             </Link>
-            <LoginErrorModal isOpen={isOpen} onClose={handleCloseModal} />
+            <AuthErrorModal isOpen={isOpen} onClose={handleCloseModal} message={message} />
         </AuthLayout >
 
     )
-}
-
-function mockLogin(email: string, password: string) {
-    throw new Error("Function not implemented.");
 }
