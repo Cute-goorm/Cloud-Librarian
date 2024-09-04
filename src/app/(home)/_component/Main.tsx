@@ -1,14 +1,14 @@
-import React from 'react';
+import React from "react";
 
 export default function Home() {
-    return (
-        <main>
-            <h1>Home Page</h1>
-            <h1>Home Page</h1>
-            <h1>Home Page</h1>
-            <h1>Home Page</h1>
-            <h1>Home Page</h1>
-            <h1>Home Page</h1>
-        </main>
-    );
+  return (
+    <main>
+      <h1 className="text-2xl">Home Page</h1>
+      <h1>Home Page</h1>
+      <h1>Home Page</h1>
+      <h1>Home Page</h1>
+      <h1>Home Page</h1>
+      <h1>Home Page</h1>
+    </main>
+  );
 }

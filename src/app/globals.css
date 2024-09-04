@@ -1,7 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* color 색상 변수 정의 */ 
+/* 색상 변수 정의 */
 :root {
     --mainColor: #222222;
     --secondaryColor: #f5a623;
@@ -17,7 +21,7 @@
 }
 
 /* 기본 글꼴 설정 */
-body { 
+body {
   font-family: 'Noto Sans KR', sans-serif;
   background-color: var(--whiteColor);
   color: var(--mainColor);
@@ -28,135 +32,10 @@ body {
   font-family: 'Noto Sans', sans-serif;
 }
 
-/* 모든 요소에 기본 패딩, 마진 제거 및 box-sizing 설정 */
-* {
-  padding: 0; /* 기본 패딩 제거 */
-  margin: 0; /* 기본 마진 제거 */
-  box-sizing: border-box; /* box-sizing을 border-box로 설정 */
-}
-
-/* reset css */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  border: 0; /* 기본 테두리 제거 */
-  font-size: 100%; /* 기본 폰트 크기 설정 */
-  font: inherit; /* 부모 요소의 폰트 상속 */
-  vertical-align: baseline; /* 세로 정렬을 baseline으로 설정 */
-}
-
-/* HTML5 블록 요소들을 기본 블록 요소로 설정 */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-  display: block; /* 블록 요소로 설정 */
-}
-
-/* 기본적인 스타일 설정 */
-body {
-  line-height: 1; /* 줄 간격 설정 */
-  font-family: 'Noto Sans KR', sans-serif; /* 기본 폰트 설정 */
-  background-color: var(--whiteColor); /* 배경색 설정 */
-  color: var(--mainColor); /* 텍스트 색상 설정 */
-}
-
-/* 목록 스타일 제거 */
-ol, ul {
-  list-style: none; /* 기본 리스트 스타일 제거 */
-}
-
-/* 인용구 스타일 제거 */
-blockquote, q {
-  quotes: none; /* 인용부호 제거 */
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: ''; /* 인용부호 내용 제거 */
-  content: none; /* 인용부호 내용 제거 */
-}
-
-/* 테이블 스타일 설정 */
-table {
-  border-collapse: collapse; /* 테두리 중복 제거 */
-  border-spacing: 0; /* 셀 간격 제거 */
-}
-
-/* 버튼 기본 스타일 제거 */
-button {
-  font: inherit; /* 부모 요소의 폰트 상속 */
-  cursor: pointer; /* 마우스 포인터를 클릭 가능하도록 변경 */
-  outline: none; /* 포커스 시 기본 아웃라인 제거 */
-  box-shadow: none; /* 기본 박스 그림자 제거 */
-  -webkit-appearance: none; /* 웹킷 브라우저에서 기본 버튼 스타일 제거 */
-  -moz-appearance: none; /* 모질라 브라우저에서 기본 버튼 스타일 제거 */
-  appearance: none; /* 기본 버튼 스타일 제거 */
-  background-color: var(--whiteColor);
-  border: none;
-}
-
-/* 폼 요소 기본 스타일 제거 및 상속 */
-input, textarea, select {
-  font-family: inherit; /* 폰트 상속 */
-  font-size: inherit; /* 폰트 크기 상속 */
-  color: inherit; /* 텍스트 색상 상속 */
-  background-color: transparent; /* 배경색 투명 */
-  border: none; /* 테두리 제거 */
-  outline: none; /* 아웃라인 제거 */
-  box-shadow: none; /* 박스 그림자 제거 */
-  appearance: none; /* 기본 스타일 제거 */
-}
-
-/* 텍스트 영역 크기 조정 불가능 설정 */
-textarea {
-  resize: none; /* 크기 조정 불가능 */
-}
-
-/* 필드셋 기본 스타일 제거 */
-fieldset {
-  border: none; /* 테두리 제거 */
-}
-
-/* 레전드 기본 패딩 제거 */
-legend {
-  padding: 0; /* 패딩 제거 */
-}
-
-/* a 태그 스타일 설정 */
+/* 기존에 필요한 스타일만 유지 */
 a {
-    text-decoration: none; /* 밑줄 제거 */
-    color: inherit;        /* 부모 요소의 색상 상속 */
-    font-size: inherit;    /* 부모 요소의 폰트 사이즈 상속 */
-    font-family: inherit;  /* 부모 요소의 폰트 패밀리 상속 */
-    font-weight: inherit;  /* 부모 요소의 폰트 두께 상속 */
-    line-height: inherit;  /* 부모 요소의 줄 높이 상속 */
-    background: transparent; /* 배경 색상 제거 */
-    border: none;          /* 테두리 제거 */
+    text-decoration: none;
+    color: inherit;
 }
 
-/* 플레이스홀더 스타일 설정 */
-::-webkit-input-placeholder {
-  color: inherit; /* 플레이스홀더 텍스트 색상 상속 */
-  opacity: 0.5; /* 투명도 조정 */
-}
-
-:-ms-input-placeholder {
-  color: inherit; /* 플레이스홀더 텍스트 색상 상속 */
-  opacity: 0.5; /* 투명도 조정 */
-}
-
-::placeholder {
-  color: inherit; /* 플레이스홀더 텍스트 색상 상속 */
-  opacity: 0.5; /* 투명도 조정 */
-}
-/* ------------------------------------------ */
-
+/* 추가적인 스타일이 필요할 경우, 구체적으로 적용 */
