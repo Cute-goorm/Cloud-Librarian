@@ -1,6 +1,5 @@
 'use client'
 
-import '../globals.css'
 import { BasicButton, SuccessButton, WarningButton } from '@/app/_component/ButtonTest';
 import Link from 'next/link';
 import React from 'react';
