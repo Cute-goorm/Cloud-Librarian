@@ -18,10 +18,17 @@ export interface LoginRequest {
 export interface SignupRequest {
     email: string;
     password: string;
+    confirmPassword: string;
     nickName: string;
 }
 
 // 비밀번호 재설정 요청 데이터 타입
 export interface PasswordResetRequest {
     password: string;
+}
+
+declare module "next-auth" {
+  interface Session {
+    accessToken?: string;
+  }
 }
