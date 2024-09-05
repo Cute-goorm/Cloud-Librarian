@@ -1,10 +1,10 @@
-const BASE_URL = '' // 실제 API URL 이나 개발용 URL 넣어주세요.
+const BASE_URL = 'http://localhost:3000' // 실제 API URL 이나 개발용 URL 넣어주세요.
 
 export const apiEndPoint = {
     auth: {
         // 로그인 엔드포인트 POST
         login: `${BASE_URL}/api/auth/login`,  
- 
+
         // 회원가입 엔드포인트 POST
         signup: `${BASE_URL}/api/auth/signup`,  
 

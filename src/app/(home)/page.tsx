@@ -1,10 +1,15 @@
-import React from 'react';
-import Main from './_component/Main';
 
-export default function Home() {
+
+import React from 'react';
+import MainBanner from './_component/MainBanner';
+import BodyContent from './_component/BodyContent';
+export default async function Home() {
   return (
-    <>
-      <Main />
-    </>
+
+      <main>
+        <MainBanner /> 
+        <BodyContent />
+      </main>
+
   );
 }
