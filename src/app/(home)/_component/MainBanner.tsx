@@ -42,7 +42,7 @@ export default function MainBanner() {
         };
 
         fetchBooks();
-    }, []); // 빈 배열을 의존성 배열로 전달하여 컴포넌트가 처음 렌더링될 때만 실행
+    }, []); 
 
 
     return (
