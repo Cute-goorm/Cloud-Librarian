@@ -6,6 +6,7 @@ import ReduxProvider from "./_component/ReduxProvider";
 import Script from "next/script"; // next/script 사용
 import GlobalStyle from "./GlobalStyle";
 import { usePathname } from "next/navigation";
+import Head from "next/head";
 
 export const metadata: Metadata = {
     title: "Create Next App",
@@ -25,6 +26,10 @@ export default function RootLayout({
 
     return (
         <html lang="ko">
+            <Head>
+                <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+                <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet" />
+            </Head>
             <body>
                 <ReduxProvider>
                     {/* GlobalStyle 적용 */}
