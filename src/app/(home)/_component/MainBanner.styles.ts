@@ -85,7 +85,6 @@ export const ReviewCard = styled.div`
       color: #555;
     }
   
-
 `
 
 
