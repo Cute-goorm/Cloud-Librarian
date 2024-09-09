@@ -9,40 +9,17 @@ import { Book } from '@/types/bookTypes';
 
 import { BodyContainer, SectionName, SectionBox } from './BodyContent.styles';
 import { SectionBookList, SectionBookListItem } from './BodyContent.styles';
-//const booksUrl = apiEndPoint.bookList.books;
-const booksUrl = '/api/booksApi';
+
+import BookReview from '@/app/_component/BookReview';
+import { BooksInfo } from '@/app/hooks/BooksInfo';
+
 
 export default function BodyContent() {
-    const [books, setBooks] = useState<Book[]>([]); // Book 배열 또는 null 상태
-    
-    const [selectedBook, setSelectedBook] = useState<Book | null>(null);
-    
-    // 도서 클릭 시 상단에 표시할 도서 설정
-    const handleBookClick = (book: Book) => {
-        setSelectedBook(book); // 선택된 도서를 업데이트
-    };
 
-    useEffect(() => {
-        const fetchBooks = async () => {
-            try {
-                const response = await fetch(booksUrl);
-                if (!response.ok) {
-                    throw new Error('Network response was not ok');
-                }
-                const data: Book[] = await response.json();
-                setBooks(data);
+    const { books, selectedBook, selectBook, error, loading } = BooksInfo(); // selectBook 추가
 
-                if (data.length > 0){
-                    setSelectedBook(data[0]); // 첫번째 도서 기본 선택
-                }
-
-            } catch (error) {
-                console.error('Failed to fetch books:', error);
-            }
-        };
-
-        fetchBooks();
-    }, []); // 빈 배열을 의존성 배열로 전달하여 컴포넌트가 처음 렌더링될 때만 실행
+    if (loading) { return <div>Loading...</div>; }   // Loading 상황
+    if (error) { return <div>Error: {error}</div>; }  // Error 상황
 
 
     return (
@@ -54,24 +31,20 @@ export default function BodyContent() {
                 <SectionName>베스트 셀러 섹션</SectionName>
                 <SectionBookList>
                     {books.map((book) => (
-                        <SectionBookListItem key={book.id} onClick={() => handleBookClick(book)}>
+                        <SectionBookListItem key={book.id} onClick={() => selectBook(book)}>
                             <img src={book.imageUrl} alt={book.title} width={100} />
                             <h2>{book.title}</h2>                            
                         </SectionBookListItem>
                     ))}
                 </SectionBookList>
             </SectionBox>
-
+            
             <SectionBox>
                 <SectionName>주간 리뷰</SectionName>
-                <SectionBookList>
-                    {books.map((book) => (
-                        <SectionBookListItem key={book.id} onClick={() => handleBookClick(book)}>
-                            <img src={book.imageUrl} alt={book.title} width={100} />
-                            <h2>{book.title}</h2>                            
-                        </SectionBookListItem>
-                    ))}
-                </SectionBookList>
+                
+                {selectedBook ? (<BookReview book={selectedBook} /> ) 
+                : ( <div>No book found</div> )}
+                {/*selectedBook에 원하는 책 정보 넣은것에 대한 ReviewCard 제공 */}
             </SectionBox>
         </BodyContainer>
     );
