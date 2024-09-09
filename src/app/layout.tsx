@@ -6,7 +6,7 @@ import ReduxProvider from "./_component/ReduxProvider";
 
 import AuthChecker from './_component/AuthChecker';
 import KakaoScript from './_component/KakaoScript';
-import GlobalStyle from './GlobalStyle';
+import './globalStyle.css';
 
 export const metadata: Metadata = {
     title: "Create Next App",
@@ -20,10 +20,9 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="ko">
-            <HeadComponent /> 
+            <HeadComponent />
             <body>
                 <ReduxProvider>
-                    <GlobalStyle />
                     <AuthChecker />
                     {children}
                     <KakaoScript />
