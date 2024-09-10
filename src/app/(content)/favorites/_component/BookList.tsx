@@ -1,5 +1,11 @@
+'use client'
+
+import BookItem from "./BookItem";
+
 export default function BookList() {
     return (
-        <main></main>
+        <main>
+            <BookItem />
+        </main>
     )
 }
