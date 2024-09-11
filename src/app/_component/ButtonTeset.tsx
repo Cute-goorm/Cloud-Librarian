@@ -57,6 +57,7 @@ export default function ButtonTest() {
             {isLoggedIn ? (
                 <BasicButton onClick={() => {
                     localStorage.removeItem('token')
+                    localStorage.removeItem('userId')
                     setIsLoggedIn(false)
                     const token = localStorage.getItem('token')
                     if (!token) {

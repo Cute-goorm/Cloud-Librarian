@@ -1,6 +1,5 @@
 import { Book } from "@/types/bookTypes";
 import { BookItemContainer, BookItemLargeText, BookItemSmallText } from "./favorites.style";
-import { BgLine } from "../../_component/Auth/Auth.styled";
 import Link from "next/link";
 
 interface BookItemProps {
