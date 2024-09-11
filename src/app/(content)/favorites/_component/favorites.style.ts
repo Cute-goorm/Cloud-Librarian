@@ -12,6 +12,18 @@ export const CategoriesFillterContainer = styled.main`
 export const BookItemContainer = styled.div`
     width: 185px;
     height: 315px;
-    margin-right: 40px;
-
+    margin-bottom: 40px;
+`
+export const BookListContainer = styled.div`
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1075px;
+`
+export const BookItemLargeText = styled.p`
+    font-size: 15px;
+    margin: 10px 0;
+`
+export const BookItemSmallText = styled.p`
+    font-size: 11px;
 `

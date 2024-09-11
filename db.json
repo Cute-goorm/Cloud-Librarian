@@ -6,6 +6,7 @@
       "author": "John Doe",
       "publisher": "Tech Books Publishing",
       "publicationYear": 2021,
+      "isbn": "978-1234567890",
       "previewContent": "This is a comprehensive guide to JavaScript.",
       "imageUrl": "https://via.placeholder.com/150/0000FF/FFFFFF/?text=Book+1"
     },
@@ -15,6 +16,7 @@
       "author": "Jane Smith",
       "publisher": "Design Books Publishing",
       "publicationYear": 2020,
+      "isbn": "978-0987654321",
       "previewContent": "Deep dive into CSS for modern web design.",
       "imageUrl": "https://via.placeholder.com/150/FF0000/FFFFFF/?text=Book+2"
     },
@@ -24,6 +26,7 @@
       "author": "Emily Davis",
       "publisher": "Tech Books Publishing",
       "publicationYear": 2019,
+      "isbn": "978-1122334455",
       "previewContent": "A practical guide to building web applications using React.",
       "imageUrl": "https://via.placeholder.com/150/00FF00/FFFFFF/?text=Book+3"
     },
@@ -33,6 +36,7 @@
       "author": "Michael Brown",
       "publisher": "Tech Books Publishing",
       "publicationYear": 2018,
+      "isbn": "978-2233445566",
       "previewContent": "Learn design patterns and best practices in Node.js.",
       "imageUrl": "https://via.placeholder.com/150/FFFF00/FFFFFF/?text=Book+4"
     },
@@ -42,6 +46,7 @@
       "author": "Laura Wilson",
       "publisher": "Web Dev Publishing",
       "publicationYear": 2021,
+      "isbn": "978-3344556677",
       "previewContent": "A complete guide to building fullstack applications with Vue.js.",
       "imageUrl": "https://via.placeholder.com/150/FF00FF/FFFFFF/?text=Book+5"
     },
@@ -51,6 +56,7 @@
       "author": "Steven Thompson",
       "publisher": "Data Books Publishing",
       "publicationYear": 2020,
+      "isbn": "978-4455667788",
       "previewContent": "A guide to using Python for data analysis and visualization.",
       "imageUrl": "https://via.placeholder.com/150/00FFFF/FFFFFF/?text=Book+6"
     },
@@ -60,6 +66,7 @@
       "author": "Robert White",
       "publisher": "Web Dev Publishing",
       "publicationYear": 2019,
+      "isbn": "978-5566778899",
       "previewContent": "Learn Django from scratch with this beginner's guide.",
       "imageUrl": "https://via.placeholder.com/150/FFA500/FFFFFF/?text=Book+7"
     },
@@ -69,6 +76,7 @@
       "author": "Paul Johnson",
       "publisher": "Tech Books Publishing",
       "publicationYear": 2022,
+      "isbn": "978-6677889900",
       "previewContent": "Best practices and tips for writing TypeScript.",
       "imageUrl": "https://via.placeholder.com/150/800080/FFFFFF/?text=Book+8"
     },
@@ -78,6 +86,7 @@
       "author": "Martha Green",
       "publisher": "Tech Books Publishing",
       "publicationYear": 2020,
+      "isbn": "978-7788990011",
       "previewContent": "Introduction to GraphQL for modern web APIs.",
       "imageUrl": "https://via.placeholder.com/150/008080/FFFFFF/?text=Book+9"
     },
@@ -87,6 +96,7 @@
       "author": "Henry Adams",
       "publisher": "DevOps Books Publishing",
       "publicationYear": 2018,
+      "isbn": "978-8899001122",
       "previewContent": "A comprehensive guide to containerization with Docker.",
       "imageUrl": "https://via.placeholder.com/150/FFC0CB/FFFFFF/?text=Book+10"
     },
@@ -96,6 +106,7 @@
       "author": "John Doe",
       "publisher": "Tech Books Publishing",
       "publicationYear": 2021,
+      "isbn": "978-9900112233",
       "previewContent": "Learn how to build native mobile apps with React Native.",
       "imageUrl": "https://via.placeholder.com/150/0000FF/FFFFFF/?text=Book+11"
     },
@@ -105,6 +116,7 @@
       "author": "Jane Smith",
       "publisher": "Design Books Publishing",
       "publicationYear": 2020,
+      "isbn": "978-0011223344",
       "previewContent": "Advanced concepts and techniques for Angular development.",
       "imageUrl": "https://via.placeholder.com/150/FF0000/FFFFFF/?text=Book+12"
     },
@@ -114,6 +126,7 @@
       "author": "Emily Davis",
       "publisher": "Tech Books Publishing",
       "publicationYear": 2019,
+      "isbn": "978-1122334455",
       "previewContent": "Build scalable web applications using Node.js.",
       "imageUrl": "https://via.placeholder.com/150/00FF00/FFFFFF/?text=Book+13"
     },
@@ -123,6 +136,7 @@
       "author": "Michael Brown",
       "publisher": "Tech Books Publishing",
       "publicationYear": 2018,
+      "isbn": "978-2233445566",
       "previewContent": "Learn modern JavaScript features and best practices.",
       "imageUrl": "https://via.placeholder.com/150/FFFF00/FFFFFF/?text=Book+14"
     },
@@ -132,6 +146,7 @@
       "author": "Laura Wilson",
       "publisher": "Web Dev Publishing",
       "publicationYear": 2021,
+      "isbn": "978-3344556677",
       "previewContent": "Get started with Vue.js for modern web development.",
       "imageUrl": "https://via.placeholder.com/150/FF00FF/FFFFFF/?text=Book+15"
     },
@@ -141,6 +156,7 @@
       "author": "Steven Thompson",
       "publisher": "Data Books Publishing",
       "publicationYear": 2020,
+      "isbn": "978-4455667788",
       "previewContent": "Introduction to machine learning with Python.",
       "imageUrl": "https://via.placeholder.com/150/00FFFF/FFFFFF/?text=Book+16"
     },
@@ -150,6 +166,7 @@
       "author": "Robert White",
       "publisher": "Web Dev Publishing",
       "publicationYear": 2019,
+      "isbn": "978-5566778899",
       "previewContent": "Learn Flask for building lightweight web applications.",
       "imageUrl": "https://via.placeholder.com/150/FFA500/FFFFFF/?text=Book+17"
     },
@@ -159,6 +176,7 @@
       "author": "Paul Johnson",
       "publisher": "Tech Books Publishing",
       "publicationYear": 2022,
+      "isbn": "978-6677889900",
       "previewContent": "Advanced techniques and tips for TypeScript development.",
       "imageUrl": "https://via.placeholder.com/150/800080/FFFFFF/?text=Book+18"
     },
@@ -168,6 +186,7 @@
       "author": "Martha Green",
       "publisher": "Tech Books Publishing",
       "publicationYear": 2020,
+      "isbn": "978-7788990011",
       "previewContent": "Practical guide to building GraphQL APIs.",
       "imageUrl": "https://via.placeholder.com/150/008080/FFFFFF/?text=Book+19"
     },
@@ -177,8 +196,9 @@
       "author": "Henry Adams",
       "publisher": "DevOps Books Publishing",
       "publicationYear": 2018,
+      "isbn": "978-8899001122",
       "previewContent": "Learn Kubernetes for container orchestration.",
-      "imageUrl": "https://via.placeholder.com/150/FFC0CB/FFFFFF/?text=Book+20"
+      "imageUrl": "https://via.placeholder.com/150/FFC0CB/FFFFFF/?text"
     }
   ],
   "reviews": [
@@ -685,67 +705,33 @@
       "password": "asd123asd123sad"
     },
     {
-      "id": "11a3",
-      "email": "attjyh12@nate.com",
-      "password": "wlsdud12@",
-      "nickName": "test1",
-      "picture": ""
-    },
-    {
-      "id": "e3be",
-      "email": "asd@nate.com",
-      "password": "wlsdud12@",
-      "nickName": "test2",
-      "picture": "data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgd2lkdGg9IjUwcHgiIGhlaWdodD0iNTBweCIgdmlld0JveD0iMCAwIDY0IDY0IiBlbmFibGUtQmFja2dyb3VuZD0ibmV3IDAgMCA2NCA2NCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CiAgICA8cGF0aCBmaWxsPSIjZmZmZmZmIiBzdHJva2U9IiM3NTc1NzUiIHN0cm9rZVdpZHRoPSIyIiBzdHJva2VNaXRlcmxpbWl0PSIxMCIgZD0iTTU1LDUwYzQuNTY1LDAsOC0zLjQzNSw4LTggYzAtNC41NjUtMy40MzUtOS04LTkgYzAtMTEuNDE0LTkuNTg2LTIwLTIxLTIwYy0xMC4xMDIsMC0xOS4yLDYuNDIzLTIxLDE2IGMwLDAtMS4xNjUsMC0yLDBDNS4yOTIsMjksMSwzNC4yOTIsMSw0MHM0LjI5MiwxMCwxMCwxMEg1NXoiIC8+Cjwvc3ZnPg=="
-    },
-    {
-      "id": "0e1f",
-      "email": "asd@nate.com",
-      "password": "wlsdud12@",
-      "nickName": "test2",
-      "picture": "data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgd2lkdGg9IjUwcHgiIGhlaWdodD0iNTBweCIgdmlld0JveD0iMCAwIDY0IDY0IiBlbmFibGUtQmFja2dyb3VuZD0ibmV3IDAgMCA2NCA2NCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CiAgICA8cGF0aCBmaWxsPSIjZmZmZmZmIiBzdHJva2U9IiM3NTc1NzUiIHN0cm9rZVdpZHRoPSIyIiBzdHJva2VNaXRlcmxpbWl0PSIxMCIgZD0iTTU1LDUwYzQuNTY1LDAsOC0zLjQzNSw4LTggYzAtNC41NjUtMy40MzUtOS04LTkgYzAtMTEuNDE0LTkuNTg2LTIwLTIxLTIwYy0xMC4xMDIsMC0xOS4yLDYuNDIzLTIxLDE2IGMwLDAtMS4xNjUsMC0yLDBDNS4yOTIsMjksMSwzNC4yOTIsMSw0MHM0LjI5MiwxMCwxMCwxMEg1NXoiIC8+Cjwvc3ZnPg=="
-    },
-    {
-      "id": "5aaf",
-      "email": "attjyh12@nate.com",
-      "password": "wlsdud12@",
-      "nickName": "test2",
-      "picture": "data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgd2lkdGg9IjUwcHgiIGhlaWdodD0iNTBweCIgdmlld0JveD0iMCAwIDY0IDY0IiBlbmFibGUtQmFja2dyb3VuZD0ibmV3IDAgMCA2NCA2NCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CiAgICA8cGF0aCBmaWxsPSIjZmZmZmZmIiBzdHJva2U9IiM3NTc1NzUiIHN0cm9rZVdpZHRoPSIyIiBzdHJva2VNaXRlcmxpbWl0PSIxMCIgZD0iTTU1LDUwYzQuNTY1LDAsOC0zLjQzNSw4LTggYzAtNC41NjUtMy40MzUtOS04LTkgYzAtMTEuNDE0LTkuNTg2LTIwLTIxLTIwYy0xMC4xMDIsMC0xOS4yLDYuNDIzLTIxLDE2IGMwLDAtMS4xNjUsMC0yLDBDNS4yOTIsMjksMSwzNC4yOTIsMSw0MHM0LjI5MiwxMCwxMCwxMEg1NXoiIC8+Cjwvc3ZnPg=="
-    },
-    {
-      "id": "a5cf",
-      "email": "attjyh12@nate.com",
-      "password": "wlsdud12@",
-      "nickName": "test2",
-      "picture": "data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgd2lkdGg9IjUwcHgiIGhlaWdodD0iNTBweCIgdmlld0JveD0iMCAwIDY0IDY0IiBlbmFibGUtQmFja2dyb3VuZD0ibmV3IDAgMCA2NCA2NCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CiAgICA8cGF0aCBmaWxsPSIjZmZmZmZmIiBzdHJva2U9IiM3NTc1NzUiIHN0cm9rZVdpZHRoPSIyIiBzdHJva2VNaXRlcmxpbWl0PSIxMCIgZD0iTTU1LDUwYzQuNTY1LDAsOC0zLjQzNSw4LTggYzAtNC41NjUtMy40MzUtOS04LTkgYzAtMTEuNDE0LTkuNTg2LTIwLTIxLTIwYy0xMC4xMDIsMC0xOS4yLDYuNDIzLTIxLDE2IGMwLDAtMS4xNjUsMC0yLDBDNS4yOTIsMjksMSwzNC4yOTIsMSw0MHM0LjI5MiwxMCwxMCwxMEg1NXoiIC8+Cjwvc3ZnPg=="
-    },
-    {
       "id": "9b8c",
       "email": "attjyh12@nate.com",
       "password": "wlsdud12@",
       "nickName": "test2",
-      "picture": "data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgd2lkdGg9IjUwcHgiIGhlaWdodD0iNTBweCIgdmlld0JveD0iMCAwIDY0IDY0IiBlbmFibGUtQmFja2dyb3VuZD0ibmV3IDAgMCA2NCA2NCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CiAgICA8cGF0aCBmaWxsPSIjZmZmZmZmIiBzdHJva2U9IiM3NTc1NzUiIHN0cm9rZVdpZHRoPSIyIiBzdHJva2VNaXRlcmxpbWl0PSIxMCIgZD0iTTU1LDUwYzQuNTY1LDAsOC0zLjQzNSw4LTggYzAtNC41NjUtMy40MzUtOS04LTkgYzAtMTEuNDE0LTkuNTg2LTIwLTIxLTIwYy0xMC4xMDIsMC0xOS4yLDYuNDIzLTIxLDE2IGMwLDAtMS4xNjUsMC0yLDBDNS4yOTIsMjksMSwzNC4yOTIsMSw0MHM0LjI5MiwxMCwxMCwxMEg1NXoiIC8+Cjwvc3ZnPg=="
-    },
-    {
-      "id": "de06",
-      "email": "attjyh12@Nate.com",
-      "password": "wlsdud12@",
-      "nickName": "test1",
-      "picture": "data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgd2lkdGg9IjUwcHgiIGhlaWdodD0iNTBweCIgdmlld0JveD0iMCAwIDY0IDY0IiBlbmFibGUtQmFja2dyb3VuZD0ibmV3IDAgMCA2NCA2NCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CiAgICA8cGF0aCBmaWxsPSIjZmZmZmZmIiBzdHJva2U9IiM3NTc1NzUiIHN0cm9rZVdpZHRoPSIyIiBzdHJva2VNaXRlcmxpbWl0PSIxMCIgZD0iTTU1LDUwYzQuNTY1LDAsOC0zLjQzNSw4LTggYzAtNC41NjUtMy40MzUtOS04LTkgYzAtMTEuNDE0LTkuNTg2LTIwLTIxLTIwYy0xMC4xMDIsMC0xOS4yLDYuNDIzLTIxLDE2IGMwLDAtMS4xNjUsMC0yLDBDNS4yOTIsMjksMSwzNC4yOTIsMSw0MHM0LjI5MiwxMCwxMCwxMEg1NXoiIC8+Cjwvc3ZnPg=="
-    },
-    {
-      "id": "ea21",
-      "email": "attjyh7@nate.com",
-      "password": "wlsdud12@",
-      "nickName": "test34",
-      "picture": "data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgd2lkdGg9IjUwcHgiIGhlaWdodD0iNTBweCIgdmlld0JveD0iMCAwIDY0IDY0IiBlbmFibGUtQmFja2dyb3VuZD0ibmV3IDAgMCA2NCA2NCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CiAgICA8cGF0aCBmaWxsPSIjZmZmZmZmIiBzdHJva2U9IiM3NTc1NzUiIHN0cm9rZVdpZHRoPSIyIiBzdHJva2VNaXRlcmxpbWl0PSIxMCIgZD0iTTU1LDUwYzQuNTY1LDAsOC0zLjQzNSw4LTggYzAtNC41NjUtMy40MzUtOS04LTkgYzAtMTEuNDE0LTkuNTg2LTIwLTIxLTIwYy0xMC4xMDIsMC0xOS4yLDYuNDIzLTIxLDE2IGMwLDAtMS4xNjUsMC0yLDBDNS4yOTIsMjksMSwzNC4yOTIsMSw0MHM0LjI5MiwxMCwxMCwxMEg1NXoiIC8+Cjwvc3ZnPg=="
-    },
-    {
-      "id": "5e5b",
-      "email": "jj@nate.com",
-      "password": "qwe123!@#",
-      "nickName": "test2321",
-      "picture": "data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgd2lkdGg9IjUwcHgiIGhlaWdodD0iNTBweCIgdmlld0JveD0iMCAwIDY0IDY0IiBlbmFibGUtQmFja2dyb3VuZD0ibmV3IDAgMCA2NCA2NCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CiAgICA8cGF0aCBmaWxsPSIjZmZmZmZmIiBzdHJva2U9IiM3NTc1NzUiIHN0cm9rZVdpZHRoPSIyIiBzdHJva2VNaXRlcmxpbWl0PSIxMCIgZD0iTTU1LDUwYzQuNTY1LDAsOC0zLjQzNSw4LTggYzAtNC41NjUtMy40MzUtOS04LTkgYzAtMTEuNDE0LTkuNTg2LTIwLTIxLTIwYy0xMC4xMDIsMC0xOS4yLDYuNDIzLTIxLDE2IGMwLDAtMS4xNjUsMC0yLDBDNS4yOTIsMjksMSwzNC4yOTIsMSw0MHM0LjI5MiwxMCwxMCwxMEg1NXoiIC8+Cjwvc3ZnPg=="
+      "picture": "data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgd2lkdGg9IjUwcHgiIGhlaWdodD0iNTBweCIgdmlld0JveD0iMCAwIDY0IDY0IiBlbmFibGUtQmFja2dyb3VuZD0ibmV3IDAgMCA2NCA2NCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CiAgICA8cGF0aCBmaWxsPSIjZmZmZmZmIiBzdHJva2U9IiM3NTc1NzUiIHN0cm9rZVdpZHRoPSIyIiBzdHJva2VNaXRlcmxpbWl0PSIxMCIgZD0iTTU1LDUwYzQuNTY1LDAsOC0zLjQzNSw4LTggYzAtNC41NjUtMy40MzUtOS04LTkgYzAtMTEuNDE0LTkuNTg2LTIwLTIxLTIwYy0xMC4xMDIsMC0xOS4yLDYuNDIzLTIxLDE2IGMwLDAtMS4xNjUsMC0yLDBDNS4yOTIsMjksMSwzNC4yOTIsMSw0MHM0LjI5MiwxMCwxMCwxMEg1NXoiIC8+Cjwvc3ZnPg==",
+      "bookmarks": [
+        { "bookId": "1" },
+        { "bookId": "2" },
+        { "bookId": "3" },
+        { "bookId": "4" },
+        { "bookId": "5" },
+        { "bookId": "6" },
+        { "bookId": "7" },
+        { "bookId": "8" },
+        { "bookId": "9" },
+        { "bookId": "10" },
+        { "bookId": "11" },
+        { "bookId": "12" },
+        { "bookId": "13" },
+        { "bookId": "14" },
+        { "bookId": "15" },
+        { "bookId": "16" },
+        { "bookId": "17" },
+        { "bookId": "18" },
+        { "bookId": "19" },
+        { "bookId": "20" }
+      ]
     }
   ]
 }
