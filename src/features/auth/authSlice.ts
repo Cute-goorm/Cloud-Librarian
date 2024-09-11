@@ -1,6 +1,6 @@
 import { createSlice, PayloadAction, createAsyncThunk } from '@reduxjs/toolkit';
 import { LoginRequest, User } from '@/types/authTypes'; // 타입 임포트
-import { Login } from '@/app/api/auth/loginApi';
+import { LoginApi } from '@/app/api/auth/loginApi';
 
 interface AuthState {
   user: User | null; // 사용자 정보
@@ -25,7 +25,7 @@ export const loginUser = createAsyncThunk(
   async (loginData: LoginRequest, thunkAPI) => {
     try {
       // loginApi를 통해 서버로 로그인 요청 보내기
-      const response = await Login(loginData);
+      const response = await LoginApi(loginData);
       return response; // 성공 시 토큰과 사용자 정보 반환
     } catch (error: any) {
       // 오류 발생 시 메시지 전달
@@ -64,6 +64,9 @@ const authSlice = createSlice({
       .addCase(loginUser.rejected, (state, action: PayloadAction<any>) => {
         state.loading = false; // 로딩 상태 false
         state.error = action.payload; // 오류 메시지 저장
+        state.user = null;  // 로그인 실패 시 사용자 정보 초기화
+        state.token = null; // 로그인 실패 시 토큰 초기화
+        state.isLoggedIn = false; // 로그인 상태 false
       });
   }
 });

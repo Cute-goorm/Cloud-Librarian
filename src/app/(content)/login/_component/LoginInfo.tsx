@@ -10,13 +10,14 @@ import { SessionProvider } from "next-auth/react";
 import AuthContext from "../../_component/Auth/AuthContext";
 import HomeBtn from "@/app/_component/HomeBtn";
 import { useRouter } from "next/navigation";
-import { Login } from "@/app/api/auth/loginApi";
+import { LoginApi } from "@/app/api/auth/loginApi";
 
 export default function LoginInfo() {
     const [email, setEmail] = useState<string>('')
     const [password, setPassword] = useState<string>('')
     const [isOpen, setIsOpen] = useState<boolean>(false)
     const [message, setMessage] = useState<string>('')
+    const [isLoading, setIsLoading] = useState<boolean>(false)
     const router = useRouter();
 
 
@@ -38,26 +39,30 @@ export default function LoginInfo() {
     // 로그인 요청
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault()
-        console.log({ email, password });
-        // 사용자 입력 폼 검증
         if (!email || !password) {
-            setMessage('이메일 또는 비밀번호를 확인해 주세요.')
+            setIsLoading(false)
+            setMessage('이메일 또는 비밀번호를 확인해주세요.')
             setIsOpen(true)
             return;
         }
+
+        setIsLoading(true)
+        setIsOpen(true)
+
         try {
             // loginApi로 로그인 요청
-            const response = await Login({ email, password })
+            const response = await LoginApi({ email, password })
             const { token, user } = response;
 
             localStorage.setItem('token', token);
             // 로그인 성공 시 리다이렉트
             console.log('로그인 성공', response, token, user);
+            setIsLoading(false)
             router.push('/')
         } catch (error: any) {
             // 로그인 실패 시 오류 처리
+            setIsLoading(false)
             setMessage('이메일 또는 비밀번호를 확인해주세요.')
-            setIsOpen(true)
         }
     }
 
@@ -97,7 +102,7 @@ export default function LoginInfo() {
                             회원가입
                         </BasicButton>
                     </Link>
-                    <AuthErrorModal isOpen={isOpen} onClose={handleCloseModal} message={message} />
+                    <AuthErrorModal isOpen={isOpen} onClose={handleCloseModal} message={message} isLoading={isLoading} />
                 </SessionProvider>
             </AuthLayout >
         </AuthContext>

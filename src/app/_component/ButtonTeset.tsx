@@ -2,9 +2,11 @@
 
 import { BasicButton, SuccessButton, WarningButton } from '@/app/_component/ButtonTest';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import React, { useEffect, useState } from 'react';
 export default function ButtonTest() {
 
+    const router = useRouter();
     const [isLoggedIn, setIsLoggedIn] = useState<boolean>(false);
     useEffect(() => {
         const token = localStorage.getItem('token');
@@ -56,6 +58,14 @@ export default function ButtonTest() {
                 <BasicButton onClick={() => {
                     localStorage.removeItem('token')
                     setIsLoggedIn(false)
+                    const token = localStorage.getItem('token')
+                    if (!token) {
+                        console.log('로그아웃 성공');
+                    } else {
+                        console.log('로그아웃 실패 토큰 존재');
+
+                    }
+                    router.push('/login')
                 }}>
                     로그아웃
                 </BasicButton>
@@ -66,11 +76,6 @@ export default function ButtonTest() {
                     </SuccessButton>
                 </Link>
             )}
-            <Link href='/signup'>
-                <WarningButton>
-                    signup
-                </WarningButton>
-            </Link>
         </div>
     );
 }
