@@ -55,6 +55,7 @@ export default function LoginInfo() {
             const { token, user } = response;
 
             localStorage.setItem('token', token);
+            localStorage.setItem('userId', user.id);
             // 로그인 성공 시 리다이렉트
             console.log('로그인 성공', response, token, user);
             setIsLoading(false)

@@ -83,6 +83,7 @@ export default function SignupInfo() {
                 const { token, user } = response
                 // 토큰 저장
                 localStorage.setItem('token', token)
+                localStorage.setItem('userId', user.id);
                 // 회원가입 성공, 로그인 처리
                 setIsLoading(false)
                 // router.push('/')
