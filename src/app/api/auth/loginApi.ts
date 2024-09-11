@@ -34,13 +34,13 @@ interface LoginResponse {
 }
 
 // 로그인 API 요청 함수
-export const Login = async (loginData: LoginRequest): Promise<LoginResponse> => {
+export const LoginApi = async (loginData: LoginRequest): Promise<LoginResponse> => {
     // 이메일과 비밀번호로 사용자 찾기
     const response = await axiosInstance.get<User[]>(`/users?email=${loginData.email}&password=${loginData.password}`);
 
     // 응답에서 사용자가 없으면 오류 발생
     if (response.data.length === 0) {
-        throw new Error('Invalid email or password');
+        throw new Error('이메일 또는 비밀번호를 확인해주세요.');
     }
 
     // 일치하는 사용자가 있으면 임의의 토큰 생성

@@ -7,28 +7,28 @@ import AuthContext from "./AuthContext";
 export default function SocialBtn() {
     const { data: session } = useSession();
 
-    if (session) {
-        // 세션이 존재할 때 토큰에 접근
-        console.log('Token', session.accessToken);
-    } else {
-        console.log('LogOut')
+    const handleSession = () => {
+        if (session) {
+            // 세션이 존재할 때 토큰에 접근
+            localStorage.setItem('token', session.accessToken as string);
+            console.log('로그인 성공');
+        } else {
+            console.log('로그인 실패');
+
+        }
+    }
+    const handleSocialLogin = (provider: string, callbackUrl: string = '/') => {
+        signIn(provider, {
+            callbackUrl: callbackUrl,
+        })
+        handleSession()
     }
 
-    const handleGoogleSignIn = () => {
-        signIn('google', {
-            callbackUrl: '/',
-        });
-    };
-
-    const handleKakaoSignIn = () => {
-        signIn('kakao', {
-            callbackUrl: '/',
-        });
-    };
     return (
         <main>
             <AuthContext>
-                <SocialSignupButton onClick={handleGoogleSignIn} >
+                <SocialSignupButton
+                    onClick={() => handleSocialLogin('goolge')} >
                     <svg
                         id="Icons"
                         xmlns="http://www.w3.org/2000/svg"
@@ -69,22 +69,7 @@ export default function SocialBtn() {
                     <SignupText >구글로 시작하기</SignupText>
                 </SocialSignupButton>
                 <SocialSignupButton
-                    onClick={() => signIn('facebook')}
-                    style={{ backgroundColor: '#3B5998', color: '#fff', borderColor: '#3B5998' }}>
-                    <svg
-                        fill="#fff"
-                        width="20px"
-                        height="20px"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                        data-name="Layer 1"
-                    >
-                        <path d="M20.9,2H3.1A1.1,1.1,0,0,0,2,3.1V20.9A1.1,1.1,0,0,0,3.1,22h9.58V14.25h-2.6v-3h2.6V9a3.64,3.64,0,0,1,3.88-4,20.26,20.26,0,0,1,2.33.12v2.7H17.3c-1.26,0-1.5.6-1.5,1.47v1.93h3l-.39,3H15.8V22h5.1A1.1,1.1,0,0,0,22,20.9V3.1A1.1,1.1,0,0,0,20.9,2Z" />
-                    </svg>
-                    <SignupText>페이스북으로 시작하기</SignupText>
-                </SocialSignupButton>
-                <SocialSignupButton
-                    onClick={handleKakaoSignIn}
+                    onClick={() => handleSocialLogin('kakao')}
                     style={{ backgroundColor: '#F7E600', borderColor: '#F7E600' }}>
                     <svg
                         fill="#222222"
