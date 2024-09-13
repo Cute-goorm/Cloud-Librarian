@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react';
 import { Book } from '@/types/bookTypes';
 
-const booksUrl = '@/app/api/books/booksApi';
+const booksUrl = '/api/books';
 
 export const BooksInfo = () => {
   const [books, setBooks] = useState<Book[]>([]);
