@@ -21,6 +21,7 @@ function generateFakeBooks(count: number = 3): Book[] {
             publicationYear: 2000 + i,
             previewContent: `This is a preview content for book ${i + 1}.`,
             imageUrl: `/images/sample-book-${i + 1}.jpg`,
+            
         };
         books.push(book);
     }
