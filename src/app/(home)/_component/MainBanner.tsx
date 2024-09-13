@@ -8,7 +8,6 @@ import { BookListItem } from './MainBanner.styles';
 import { MainContainer } from './MainBanner.styles';
 
 import { apiEndPoint } from '@/config/apiConfig';
-import { Book } from '@/types/bookTypes';
 import { BooksInfo } from '@/app/hooks/BooksInfo';
 
 //const booksUrl = apiEndPoint.bookList.books;
