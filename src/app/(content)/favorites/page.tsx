@@ -1,10 +1,5 @@
-import BookList from "./_component/BookList";
+import Favorites from "./_component/favorites";
 
 export default function FavoritesPage() {
-  return (
-    <main>
-      <h1>Favorites Page</h1>
-      <BookList />
-    </main>
-  )
+  return (<Favorites />)
 } 
