@@ -1,4 +1,4 @@
-// hooks/useFetchBooks.tsx
+
 import { useState, useEffect } from 'react';
 import { Book } from '@/types/bookTypes';
 
@@ -11,6 +11,7 @@ export const BooksInfo = () => {
   const [loading, setLoading] = useState<boolean>(true);
 
   useEffect(() => {
+    console.log('Fetching books data');
     const fetchBooks = async () => {
       try {
         const response = await fetch(booksUrl);

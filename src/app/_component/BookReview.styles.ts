@@ -1,17 +1,7 @@
 import styled, { css } from 'styled-components';
 
 
-
-const commonBoxStyles = css`
-  border-radius: 10px;
-  padding: 8px 18px;
-  font-family: 'Noto Sans', sans-serif;
-  font-size: 14px;
-  border: none;
-`;
-
 export const ReviewCard = styled.div`
-  ${commonBoxStyles}
   
   width: 100%;
   height: 415px;
@@ -21,7 +11,7 @@ export const ReviewCard = styled.div`
   
   padding-top: 50px;
   padding-bottom: 50px;
-  padding-left: 20px;
+  
   justify-content:space-evenly;
   align-content:center;
 
@@ -36,21 +26,21 @@ export const ReviewCard = styled.div`
 
 
 export const ReviewBookInfo = styled.div`
-  ${commonBoxStyles}
+  
   display: flex;
   flex-direction:column;
   justify-content: space-around;
   width: 60%;
-  
-  background-color: white;
   padding: 15px;
-    
   list-style-type: none;   
+  align-items: left;
   
-  background-color: var(--primaryColor);
-  color: var(--whiteColor);
-  &:hover {
-    background-color: var(--secondaryColor);
+  background-color: var(--whiteColor);
+  color: var(--primaryColor);
+  
+  button {
+    width: 28px;
+    height: 28px;
   }
 
 `
