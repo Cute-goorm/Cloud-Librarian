@@ -1,5 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
-import { Book } from '@/types/bookTypes';
+import { Reviews } from '@/types/reviewTypes';
 import fs from 'fs';
 import path from 'path';
 
@@ -17,9 +17,9 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
 
     try {
       const jsonData = JSON.parse(data); // JSON 데이터 파싱
-      const books: Book[] = jsonData.books; // db.json 내 "books" 데이터를 가져옴
+      const reviews: Reviews[] = jsonData.reviews; // db.json 내 "books" 데이터를 가져옴
 
-      res.status(200).json(books); // 가져온 데이터를 반환
+      res.status(200).json(reviews); // 가져온 데이터를 반환
     } catch (parseError) {
       res.status(500).json({ error: 'Failed to parse JSON data' });
     }
